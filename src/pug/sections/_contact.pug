@@ -1,0 +1,29 @@
+section.row.column.contact
+    .contact_card
+        .contact_map
+            .contact_map_info
+                .contact_map_info_top
+                    h3
+                        | Leopoldstr. 50, München
+                    | Работаем с 9:00 до 20:00
+                .contact_map_info_bottom
+                    a(href="tel:017670781452")
+                        +icon('tel', 16, 16, 'adb5bd')
+                        | 01767 078-14-52
+                    +social('contact', [['facebook_messenger', 20, 20], ['viber', 20, 20], ['whatsapp', 20, 20], ['telegram', 16, 17]])
+            .contact_map_inner
+                iframe(frameborder='0', src='https://www.google.com/maps/embed/v1/place?q=Leopoldstr.%2050%2C%20M%C3%BCnchen&key=AIzaSyD7QmgMNT663H2I1xAbSQZb4Qik1Vck1Dw')
+        #contact.contact_content
+            h2.contact_header
+                | Записаться на процедуру
+            form.contact_form(action="")
+                input(type="text" placeholder="Имя" name="name")
+                input(type="tel" placeholder="Телефон" name="phone")
+                select
+                    option(value="" disabled selected) Интересующая услуга
+                    option(value="1") Услуга 1
+                    option(value="2") Услуга 2
+                    option(value="3") Услуга 3
+                button.button.primary.icon
+                    | Записаться
+                    +icon('arr', 24, 16, 'fff')

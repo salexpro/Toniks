@@ -1,0 +1,21 @@
+.off-canvas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    text-align: center;
+    .menu{
+        flex: 0 0 auto;
+        a{
+            margin: 15px 0;
+            font-family: $header-font-family;
+        }
+    }
+    .button{
+        flex: 0 0 auto;
+    }
+}
+
+.close-button{
+    transition: 300ms;
+}

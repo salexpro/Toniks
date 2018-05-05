@@ -1,0 +1,10 @@
+header.column.head
+    button.head_hamb(data-open="menu")
+    .head_logo
+        img(src="./img/logo.svg", alt="Tonik's Beauty")
+    nav.head_nav
+        +menu
+    a.button.hollow.primary-lighter(href="#contact" data-smooth-scroll)
+        | Записаться
+    a.head_chat(href="#contact" data-smooth-scroll)
+        +icon('chat', 20, 20)

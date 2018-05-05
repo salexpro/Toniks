@@ -2,6 +2,27 @@ html, body{
     -webkit-overflow-scrolling: touch
 }
 
+// Styled scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 5px;
+}
+
+// Drop autofill
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus,
+:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset, inset 0 -2px 0 #fee8f0;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $black;
+}
+
 .wrap {
     overflow: hidden;
     min-width: 320px;
@@ -22,6 +43,17 @@ html, body{
 [type='url'],
 [type='color'],
 textarea,
-select {
+select,
+button {
     outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+select{
+    box-shadow: inset 0 -2px 0 #fee8f0;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI4IiB2aWV3Ym94PSIwIDAgMTIgOCI+PGcgb3BhY2l0eT0iLjY1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjkxIC0zNjgwKSI+PHBhdGggZmlsbD0iIzIxMjUyOSIgZD0iTTI5NyAzNjg3LjQxbC01LjY2LTUuNjUgMS40Mi0xLjQyIDQuMjQgNC4yNSA0LjI0LTQuMjUgMS40MiAxLjQyLTUuNjYgNS42NXoiPjwvcGF0aD48L2c+PC9zdmc+);
+    background-size: 12px;
 }

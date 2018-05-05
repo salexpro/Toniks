@@ -1,0 +1,23 @@
+.button{
+    letter-spacing: 0.64px;
+    &.icon{
+        display: inline-flex;
+        justify-content: space-between;
+        svg{
+            vertical-align: bottom;
+            margin-left: 15px;
+        }
+    }
+    &.primary{
+        box-shadow: 0 5px 10px rgba(246, 140, 178, 0.5);
+    }
+    &.secondary-lighter{
+        box-shadow: 0 5px 10px rgba(83, 197, 216, 0.5);
+    }
+    &.hollow.hollow{
+        color: $black;
+        &:hover, &:focus{
+            color: $black;
+        }
+    }
+}

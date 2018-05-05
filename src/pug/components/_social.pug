@@ -1,0 +1,6 @@
+mixin social(mod, items)
+    ul.social(class="social--" + mod)
+        each item in items
+            li
+                a(href=item[3] target="_blank")
+                    +icon(item[0], item[1], item[2])

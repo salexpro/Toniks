@@ -1,1 +1,9 @@
-script(src="./js/app.min.js")
+#menu.off-canvas.position-left(data-off-canvas data-transition="overlap" data-auto-focus="false")
+    .off-canvas_logo
+        img(src="./img/logo.svg", alt="Tonik's")
+    +menu('vertical')
+    a.button.primary.icon(href="#contact" data-smooth-scroll data-close)
+        | Записаться
+        +icon('arr', 24, 16, 'fff')
+    button.close-button.small(aria-label='Закрыть', type='button', data-close)
+        span(aria-hidden='true') ×

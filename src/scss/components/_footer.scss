@@ -1,0 +1,28 @@
+.footer{
+    margin-top: -100px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    &_top{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 170px 0 70px;
+    }
+    &_menu{
+        display: none;
+    }
+    &_phone{
+        display: none;
+    }
+    &_logo{
+        margin-bottom: 70px;
+    }
+    &_bottom{
+        border-top: 1px solid #dee2e6;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: rgba($black, 0.5);
+        > .row{
+            height: 50px;
+        }
+    }
+}

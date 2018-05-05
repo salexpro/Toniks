@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/lib\/fastnav.min.js >> docs\/js\/app.min.js\nrm build.zip\nzip -r build.zip build\/",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/components\/fastnav.min.js >> docs\/js\/app.min.js\nrm build.zip\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"scriptUUIDString": "26AE3F7B-AC2D-4F34-BF67-57F311D0110B",
 		"stepType": 2,
@@ -38,18 +38,18 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/build\/build.zip",
 		"oF": 1
+		},
+	"\/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/docs",
+		"oF": 0
 		},
 	"\/node_modules": {
 		"ft": 65536,
@@ -67,12 +67,42 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.offcanvas.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.offcanvas.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.smoothScroll.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.smoothScroll.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.box.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.box.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.keyboard.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.keyboard.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -87,6 +117,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.triggers.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.util.triggers.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/node_modules\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
 		"ma": 1,
@@ -96,6 +136,94 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/node_modules\/owl.carousel\/dist\/owl.carousel.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/dist\/owl.carousel.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/node_modules\/owl.carousel\/src\/scss\/_animate.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_animate.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/node_modules\/owl.carousel\/src\/scss\/_autoheight.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_autoheight.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/node_modules\/owl.carousel\/src\/scss\/_core.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_core.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/node_modules\/owl.carousel\/src\/scss\/_lazyload.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_lazyload.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/node_modules\/owl.carousel\/src\/scss\/_video.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/_video.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/node_modules\/owl.carousel\/src\/scss\/owl.carousel.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/owl.carousel\/src\/css\/owl.carousel.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"\/package-lock.json": {
 		"ft": 524288,
@@ -121,15 +249,234 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/README.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/src\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 4928,
+		"oA": 0,
+		"oAP": "\/build\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/android-chrome-256x256.png": {
+		"ft": 32768,
+		"iS": 6773,
+		"oA": 0,
+		"oAP": "\/build\/android-chrome-256x256.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 4071,
+		"oA": 0,
+		"oAP": "\/build\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/src\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 531,
+		"oA": 0,
+		"oAP": "\/build\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 936,
+		"oA": 0,
+		"oAP": "\/build\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/favicon.ico",
+		"oF": 0
+		},
+	"\/src\/fonts\/Montserrat\/Montserrat-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/Montserrat\/Montserrat-Bold.woff",
+		"oF": 0
+		},
+	"\/src\/fonts\/Montserrat\/Montserrat-Bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/Montserrat\/Montserrat-Bold.woff2",
+		"oF": 0
+		},
+	"\/src\/fonts\/Montserrat\/Montserrat-SemiBold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/Montserrat\/Montserrat-SemiBold.woff",
+		"oF": 0
+		},
+	"\/src\/fonts\/Montserrat\/Montserrat-SemiBold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/Montserrat\/Montserrat-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/src\/fonts\/SegoeUI\/SegoeUI.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/SegoeUI\/SegoeUI.woff",
+		"oF": 0
+		},
+	"\/src\/fonts\/SegoeUI\/SegoeUI.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/SegoeUI\/SegoeUI.woff2",
+		"oF": 0
+		},
+	"\/src\/img\/home.jpg": {
+		"ft": 16384,
+		"iS": 67878,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/home.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/home@2x.jpg": {
+		"ft": 16384,
+		"iS": 239244,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/home@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/logo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715935,
+		"prP": 0
+		},
+	"\/src\/img\/logo_footer.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/logo_footer.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715935,
+		"prP": 0
+		},
+	"\/src\/img\/services\/1.jpg": {
+		"ft": 16384,
+		"iS": 13725,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/services\/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/services\/1@2x.jpg": {
+		"ft": 16384,
+		"iS": 43787,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/services\/1@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/services\/2.jpg": {
+		"ft": 16384,
+		"iS": 13929,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/services\/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/services\/2@2x.jpg": {
+		"ft": 16384,
+		"iS": 43109,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/services\/2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/services\/3.jpg": {
+		"ft": 16384,
+		"iS": 14109,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/services\/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/services\/3@2x.jpg": {
+		"ft": 16384,
+		"iS": 47191,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/services\/3@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/src\/js\/app.js": {
 		"ft": 64,
@@ -151,30 +498,32 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/src\/pug\/components\/_footer.pug": {
+	"\/src\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 3262,
+		"oA": 0,
+		"oAP": "\/build\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/pug\/components\/_icons.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/_footer.html",
+		"oAP": "\/build\/_icons.html",
 		"oF": 0,
 		"oS": 1
 		},
-	"\/src\/pug\/components\/_head.pug": {
+	"\/src\/pug\/components\/_menu.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/_head.html",
-		"oF": 0,
-		"oS": 1
-		},
-	"\/src\/pug\/components\/_header.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/build\/_header.html",
+		"oAP": "\/build\/_menu.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -184,6 +533,24 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_offcanvas.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/components\/_popup.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_popup.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/components\/_social.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_social.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -204,6 +571,88 @@
 		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/src\/pug\/sections\/_brands.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_brands.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_contact.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_contact.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_first.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_first.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_footer.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_footer.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_head.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_head.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_header.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_header.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_offers.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_offers.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_services.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_services.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/safari-pinned-tab.svg",
+		"oF": 1,
+		"opt": 0,
+		"plM": 1103269715935,
+		"prP": 0
 		},
 	"\/src\/scss\/_settings.scss": {
 		"aP": 1,
@@ -243,6 +692,143 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/src\/scss\/components\/_button.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_button.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_contact.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_contact.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_first.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_first.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_fonts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_footer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_header.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_offcanvas.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_offcanvas.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_offers.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_offers.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_services.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_services.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_social.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_social.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/site.webmanifest",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -253,9 +839,9 @@
 	"creationDate": 505831586,
 	"displayValue": "Toniks",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 544444164
+	"lastBuiltDate": 547230020
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1651,7 +2237,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {

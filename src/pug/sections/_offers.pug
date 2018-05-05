@@ -1,0 +1,17 @@
+mixin offer(title, bold, descr)
+    .offers_item
+        h2.offers_item_header
+            =title
+        .offers_item_descr
+            b=bold
+            if descr !== 'social'
+                !=descr
+            else
+                +social('offers', [['facebook_messenger', 20, 20], ['viber', 20, 20], ['whatsapp', 20, 20], ['telegram', 16, 17]])
+
+section.offers
+    .row.column
+        .owl-carousel.offers_carousel
+            +offer('Только лучшее', 'Reviderm, Beauty Hills, Schellac', 'и другие проверенные бренды')
+            +offer('6 дней в неделю', 'Leopoldstr. 50, München', 'Работаем с 9:00 до 20:00')
+            +offer('Всегда на связи', '01767 078-14-52', 'social')

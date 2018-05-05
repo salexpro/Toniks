@@ -1,0 +1,21 @@
+mixin service(img, title, descr)
+    .column.small-12
+        .services_item
+            .services_item_img
+                img(src="./img/services/" + img + "@2x.jpg", alt=title)
+            h2.services_item_title
+                =title
+            p.services_item_descr
+                =descr
+            a.button.secondary.clear.icon(href="#")
+                | Подробнее
+                +icon('arr', 24, 16, '55b0bf')
+
+section.services
+    .row.services_inner
+        +service(1, 'Маникюр и педикюр', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+        +service(2, 'Косметические услуги', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+        +service(3, 'Массаж', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+    
+    a.button.primary-lighter.hollow(href="./services.html")
+        | Смотреть все услуги

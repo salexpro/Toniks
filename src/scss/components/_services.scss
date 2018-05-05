@@ -1,0 +1,30 @@
+.services{
+    text-align: center;
+    margin-bottom: 70px;
+    &_item{
+        margin-bottom: 55px;
+        &_img {
+            width: calc(100% - 20px);
+            position: relative;
+            margin-bottom: 58px;
+            box-shadow: 10px 10px 20px rgba(153, 153, 153, 0.4);
+            img {
+                width: 100%;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 100%;
+                height: 100%;
+                border: 6px solid $primary-light;
+                z-index: -1;
+            }
+        }
+        &_descr{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
