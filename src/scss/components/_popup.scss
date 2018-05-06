@@ -1,0 +1,35 @@
+.reveal {
+    height: 100%;
+    outline: none;
+    @include breakpoint(medium) {
+        padding: 45px;
+    }
+    &.small {
+        margin-right: 0;
+        @include breakpoint(medium) {
+            width: 480px;
+        }
+    }
+    &-overlay{
+        overflow: auto;
+    }
+    &_inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 440px;
+        @include breakpoint(medium) {
+            min-height: 560px;
+        }
+    }
+    &_header{
+        font-size: 26px;
+        color: $primary-color;
+        margin-bottom: 26px;
+        @include breakpoint(medium) {
+            font-size: 42px;
+            margin-bottom: 95px;
+        }
+    }
+}

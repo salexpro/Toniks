@@ -2,7 +2,7 @@
 $contrast-warnings: false;
 @import 'settings';
 @import 'foundation';
-// @import 'motion-ui';
+@import 'motion-ui';
 
 @include foundation-global-styles;
 //@include foundation-grid;
@@ -37,7 +37,7 @@ $contrast-warnings: false;
 // @include foundation-meter-element;
 // @include foundation-slider;
 // @include foundation-sticky;
-// @include foundation-reveal;
+@include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;
@@ -61,6 +61,7 @@ $contrast-warnings: false;
 @import 'components/_offcanvas';
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel';
 @import 'components/_social';
+@import 'components/_popup';
 
 // Sections
 @import 'components/_header';

@@ -1,0 +1,20 @@
+#appointment.reveal.small(data-reveal data-v-offset="0" data-animation-in="fade-in" data-animation-out="fade-out")
+    .reveal_inner
+        h2.reveal_header
+            | Записаться 
+            br
+            | на процедуру
+        form.contact_form.contact_form--white(action="")
+            input(type="text" placeholder="Имя" name="name" required)
+            input(type="tel" placeholder="Телефон" name="phone" required)
+            select(required)
+                option(value="" disabled selected) Интересующая услуга
+                option(value="1") Услуга 1
+                option(value="2") Услуга 2
+                option(value="3") Услуга 3
+            textarea(placeholder="Комментарий" rows="1")
+            button.button.primary.icon
+                | Записаться
+                +icon('arr', 24, 16, 'fff')
+        button.close-button.small(aria-label='Close', type='button', data-close)
+            span(aria-hidden='true') ×

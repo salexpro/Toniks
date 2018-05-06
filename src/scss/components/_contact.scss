@@ -28,12 +28,10 @@
             width: 100%;
             height: 150px;
             letter-spacing: 0.32px;
-            position: absolute;
-            top: 0;
-            left: 0;
             z-index: 2;
             @include breakpoint(medium) {
                 width: calc(100% - 100px);
+                position: absolute;
                 top: 50px;
                 left: 50px;
             }
@@ -71,13 +69,8 @@
         }
         &_inner{
             width: 100%;
-            height: 100%;
-            padding-top: 150px;
+            height: calc(100% - 150px);
             @include breakpoint(medium) {
-                padding-top: 0;
-            }
-            iframe{
-                width: 100%;
                 height: 100%;
             }
         }
@@ -90,21 +83,11 @@
         text-align: center;
         @include breakpoint(medium) {
             padding: 85px 17% 100px;
-            input{
-                font-size: 16px;
-            }
         }
         @include breakpoint(large) {
             text-align: left;
-            padding: 85px 100px 100px;
+            padding: 85px 9% 100px;
             width: 50%;
-        }
-        .button{
-            width: 100%;
-            margin-top: 20px;
-            @include breakpoint(medium) {
-                width: auto;
-            }
         }
     }
     &_header{
@@ -117,6 +100,36 @@
         }
         @include breakpoint(large) {
             margin-bottom: 30px;
+        }
+    }
+    &_form{
+        &--white{
+            input, select, textarea{
+                box-shadow: inset 0 -2px 0 #dee2e6;
+                &:hover,
+                &:focus {
+                    box-shadow: inset 0 -2px 0 $primary-lighter;
+                }
+            }
+        }
+        :invalid:not(:focus):not(:placeholder-shown):not(select) {
+            box-shadow: inset 0 -2px 0 $alert-color;
+        }
+        input,
+        select,
+        textarea {
+            width: 100%;
+            resize: none;
+            @include breakpoint(medium) {
+                font-size: 16px;
+            }
+        }
+        .button {
+            width: 100%;
+            margin-top: 20px;
+            @include breakpoint(medium) {
+                width: auto;
+            }
         }
     }
 }

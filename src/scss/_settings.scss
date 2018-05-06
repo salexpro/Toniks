@@ -77,7 +77,7 @@ $foundation-palette: (
   secondary-light: #96d4de,
   success: #3adb76, 
   warning: #ffae00,
-  alert: #cc4b37
+  alert: #f03e3e
 );
 $primary-lighter: get-color(primary-lighter);
 $primary-light: get-color(primary-light);
@@ -291,7 +291,7 @@ $button-padding: 0.88em 1.88em;
 $button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-hover: $button-background;
 $button-color: $white;
 $button-color-alt: $white;
 $button-radius: $global-radius;
@@ -304,9 +304,9 @@ $button-sizes: (
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -20%;
-$button-transition: background 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out;
+$button-background-hover-lightness: -0%;
+$button-hollow-hover-lightness: -0%;
+$button-transition: background 0.25s ease-out, color 0.25s ease-out, box-shadow 0.25s ease-out;
 
 // 12. Button Group
 // ----------------
@@ -734,11 +734,11 @@ $responsive-embed-ratios: (
 $reveal-background: $white;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
+$reveal-padding: 20px;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba(33, 37, 41, 0.65);
 
 // 48. Slider
 // ----------

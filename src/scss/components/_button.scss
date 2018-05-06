@@ -8,17 +8,32 @@
             margin-left: 15px;
         }
     }
-    &.primary{
+    &.primary:not(.clear){
         box-shadow: 0 5px 10px rgba(246, 140, 178, 0.5);
+        &:hover,
+        &:focus {
+            box-shadow: 0 8px 15px rgba(246, 140, 178, 0.65);
+        }
     }
     &.secondary-lighter{
         box-shadow: 0 5px 10px rgba(83, 197, 216, 0.5);
+        &:hover,
+        &:focus {
+            box-shadow: 0 8px 15px rgba(83, 197, 216, 0.65);
+        }
     }
     &.hollow.hollow{
         color: $black;
         min-width: 200px;
         &:hover, &:focus{
             color: $black;
+        }
+        &.primary-lighter{
+            &:hover,
+            &:focus {
+                color: $white;
+                background-color: $primary-lighter;
+            }
         }
     }
     &.hollow, &.clear{

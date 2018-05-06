@@ -11,15 +11,14 @@ section.row.column.contact
                         +icon('tel', 16, 16, 'adb5bd')
                         | 01767 078-14-52
                     +social('contact', [['facebook_messenger', 20, 20], ['viber', 20, 20], ['whatsapp', 20, 20], ['telegram', 16, 17]])
-            .contact_map_inner
-                iframe(frameborder='0', src='https://www.google.com/maps/embed/v1/place?q=Leopoldstr.%2050%2C%20M%C3%BCnchen&key=AIzaSyD7QmgMNT663H2I1xAbSQZb4Qik1Vck1Dw')
-        #contact.contact_content
+            #map.contact_map_inner
+        .contact_content
             h2.contact_header
                 | Записаться на процедуру
             form.contact_form(action="")
-                input(type="text" placeholder="Имя" name="name")
-                input(type="tel" placeholder="Телефон" name="phone")
-                select
+                input(type="text" placeholder="Имя" name="name" required)
+                input(type="tel" placeholder="Телефон" name="phone" required)
+                select(required)
                     option(value="" disabled selected) Интересующая услуга
                     option(value="1") Услуга 1
                     option(value="2") Услуга 2

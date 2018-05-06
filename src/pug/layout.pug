@@ -1,15 +1,18 @@
 block const
 //- Components
-include components/_icons
+
 include components/_menu
 include components/_social
 doctype html
 html(lang="ru")
     include sections/_head
     body
+        include components/_icons
         main.off-canvas-content.wrap(data-off-canvas-content)
             include sections/_header
             block content
             include sections/_footer
+        include components/_popup
         include components/_offcanvas
         script(src="./js/app.min.js")
+        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAk83O-v-B00q1vWPdkBC4orJUXqxqGKtI&callback=initMap')
