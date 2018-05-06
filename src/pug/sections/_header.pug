@@ -1,10 +1,22 @@
-header.column.head
+header.column.head.head--top
     button.head_hamb(data-open="menu")
     .head_logo
         img(src="./img/logo.svg", alt="Tonik's Beauty")
     nav.head_nav
         +menu
-    a.button.hollow.primary-lighter(href="#contact" data-smooth-scroll)
+    button.button.hollow.primary-lighter(data-open="appointment")
         | Записаться
+    button.head_chat(data-open="appointment")
+        +icon('chat', 20, 20)
+
+header.column.head.head--fixed
+    button.head_hamb(data-open="menu")
+    .head_logo
+        img(src="./img/logo_small.svg", alt="Tonik's Beauty")
+    nav.head_nav
+        +menu
+    button.button.clear.primary.icon(data-open="appointment")
+        | Записаться
+        +icon('arr', 24, 16, 'f68cb2')
     a.head_chat(href="#contact" data-smooth-scroll)
         +icon('chat', 20, 20)

@@ -31,11 +31,16 @@
         }
     }
     &--footer{
+        display: flex;
+        justify-content: center;
         li+li {
             margin-left: 20px;
         }
         svg {
             fill: $white;
+            @include breakpoint(large) {
+                fill: $primary-color;
+            }
         }
         a{
             width: 50px;
@@ -46,9 +51,21 @@
             box-shadow: 0 3px 6px rgba(246, 140, 178, 0.5);
             background-color: $primary-lighter;
             transition: 300ms;
+            @include breakpoint(large) {
+                width: auto;
+                height: auto;
+                background: none;
+                box-shadow: none;
+            }
             &:hover,
             &:focus {
                 background-color: $primary-color;
+                @include breakpoint(large) {
+                    background: none;
+                    svg{
+                        fill: $primary-lighter;
+                    }
+                }
             }
         }
     }

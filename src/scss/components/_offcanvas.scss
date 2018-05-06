@@ -4,15 +4,37 @@
     justify-content: space-between;
     padding: 80px 30px 50px;
     text-align: center;
+    @include breakpoint(medium) {
+        padding: 30px 40px 0;
+        display: block;
+    }
+    &_logo{
+        @include breakpoint(medium) {
+            text-align: left;
+        }
+    }
     .menu{
         flex: 0 0 auto;
+        @include breakpoint(medium) {
+            float: left;
+            margin-left: -16px;
+        }
         a{
             margin: 15px 0;
-            font-family: $header-font-family;
+            @include breakpoint(medium) {
+                margin-top: 5px;
+            }
         }
     }
     .button{
         flex: 0 0 auto;
+        @include breakpoint(medium) {
+            float: right;
+            padding-right: 0;
+            &.clear{
+                border-right: 0;
+            }
+        }
     }
 }
 

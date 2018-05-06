@@ -38,6 +38,12 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -73,16 +79,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.offcanvas.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.smoothScroll.min.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.smoothScroll.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -299,6 +295,13 @@
 		"oAP": "\/build\/browserconfig.xml",
 		"oF": 0
 		},
+	"\/src\/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/CNAME",
+		"oF": 0
+		},
 	"\/src\/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 531,
@@ -370,6 +373,50 @@
 		"oAP": "\/build\/fonts\/SegoeUI\/SegoeUI.woff2",
 		"oF": 0
 		},
+	"\/src\/img\/brands\/beauty_hills.jpg": {
+		"ft": 16384,
+		"iS": 6046,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/brands\/beauty_hills.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/brands\/calgel.jpg": {
+		"ft": 16384,
+		"iS": 5688,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/brands\/calgel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/brands\/reviderm.jpg": {
+		"ft": 16384,
+		"iS": 3979,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/brands\/reviderm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/brands\/shellac.jpg": {
+		"ft": 16384,
+		"iS": 3846,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/brands\/shellac.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/src\/img\/home.jpg": {
 		"ft": 16384,
 		"iS": 67878,
@@ -402,11 +449,11 @@
 		"plM": 1103269715935,
 		"prP": 0
 		},
-	"\/src\/img\/logo_footer.svg": {
+	"\/src\/img\/logo_small.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
-		"oAP": "\/build\/img\/logo_footer.svg",
+		"oAP": "\/build\/img\/logo_small.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 1103269715935,
@@ -693,6 +740,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/src\/scss\/components\/_brands.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_brands.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/src\/scss\/components\/_button.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -841,7 +901,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 547230020
+	"lastBuiltDate": 547331600
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

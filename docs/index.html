@@ -26,19 +26,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Tonik's Beauty</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=1f490a41bd18ca3f47fdcea529d86e17">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=1edbd34ff1e4dff7001aecdf7dcf97b9">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=2b2862beab43426c3ba4659962c53f03">
-    <link rel="manifest" href="/site.webmanifest?ckcachebust=aa9e70e8dc682767a6a7c97d71b4c099">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=f66dcacb558d0d240e728ea6b2cf9aa5" color="#f68cb2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=03bf79426f473a7043689d62d64876d0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=15f233bdf9ab2e6ce95fa24caba081f3">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=edbebc3d84e59e49bff67424b8370b4e">
+    <link rel="manifest" href="/site.webmanifest?ckcachebust=8782ae93cde5efd19af8416ea6d20ad7">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=c33dcde40fd9cae86ec58c5e7fce7de1" color="#f68cb2">
     <meta name="msapplication-TileColor" content="#f68cb2">
     <meta name="theme-color" content="#f68cb2">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=4240d9d3c9f4c73f6489e073556258fa">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=d0fa1cceba39f743adf4398cf9d7c610">
   </head>
   <body>
     <main class="off-canvas-content wrap" data-off-canvas-content>
-      <header class="column head">
+      <header class="column head head--top">
         <button class="head_hamb" data-open="menu"></button>
         <div class="head_logo"><img src="./img/logo.svg" alt="Tonik's Beauty"></div>
         <nav class="head_nav">
@@ -47,7 +47,29 @@
             <li><a href="./services.html">Услуги</a></li>
             <li> <a href="./contacts.html">Контакты</a></li>
           </ul>
-        </nav><a class="button hollow primary-lighter" href="#contact" data-smooth-scroll>Записаться</a><a class="head_chat" href="#contact" data-smooth-scroll>
+        </nav>
+        <button class="button hollow primary-lighter" data-open="appointment">Записаться</button>
+        <button class="head_chat" data-open="appointment">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <use xlink:href="#chat"></use>
+          </svg>
+        </button>
+      </header>
+      <header class="column head head--fixed">
+        <button class="head_hamb" data-open="menu"></button>
+        <div class="head_logo"><img src="./img/logo_small.svg" alt="Tonik's Beauty"></div>
+        <nav class="head_nav">
+          <ul class="menu">
+            <li> <a href="./about.html">О нас</a></li>
+            <li><a href="./services.html">Услуги</a></li>
+            <li> <a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="button clear primary icon" data-open="appointment">Записаться
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+            <use fill="#f68cb2" xlink:href="#arr"></use>
+          </svg>
+        </button><a class="head_chat" href="#contact" data-smooth-scroll>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <use xlink:href="#chat"></use>
           </svg></a>
@@ -57,7 +79,7 @@
           <div class="first_img"><img src="./img/home@2x.jpg" alt=""></div>
         </div>
         <div class="column small-12 large-5 first_content">
-          <h1>Lorem ipsum dolor, consectetuer adipis aenean massa</h1>
+          <h1 class="first_header">Lorem ipsum dolor, consectetuer adipis aenean massa</h1>
           <p class="first_descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer elit.</p><a class="button secondary-lighter icon" href="./services.html">Cмотреть услуги
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
               <use fill="#fff" xlink:href="#arr"></use>
@@ -108,43 +130,39 @@
       </section>
       <section class="services">
         <div class="row services_inner">
-                <div class="column small-12">
-                  <div class="services_item">
-                    <div class="services_item_img"><img src="./img/services/1@2x.jpg" alt="Маникюр и педикюр"></div>
-                    <h2 class="services_item_title">Маникюр и педикюр
-                    </h2>
-                    <p class="services_item_descr">Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
-                    </p><a class="button secondary clear icon" href="#">Подробнее
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
-                        <use fill="#55b0bf" xlink:href="#arr"></use>
-                      </svg></a>
-                  </div>
-                </div>
-                <div class="column small-12">
-                  <div class="services_item">
-                    <div class="services_item_img"><img src="./img/services/2@2x.jpg" alt="Косметические услуги"></div>
-                    <h2 class="services_item_title">Косметические услуги
-                    </h2>
-                    <p class="services_item_descr">Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
-                    </p><a class="button secondary clear icon" href="#">Подробнее
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
-                        <use fill="#55b0bf" xlink:href="#arr"></use>
-                      </svg></a>
-                  </div>
-                </div>
-                <div class="column small-12">
-                  <div class="services_item">
-                    <div class="services_item_img"><img src="./img/services/3@2x.jpg" alt="Массаж"></div>
-                    <h2 class="services_item_title">Массаж
-                    </h2>
-                    <p class="services_item_descr">Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
-                    </p><a class="button secondary clear icon" href="#">Подробнее
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
-                        <use fill="#55b0bf" xlink:href="#arr"></use>
-                      </svg></a>
-                  </div>
-                </div>
+                <div class="column small-12 large-4"><a class="services_item" href="#"><span class="services_item_img"><img src="./img/services/1@2x.jpg" alt="Маникюр и педикюр"></span><span class="services_item_content">
+                      <h2 class="services_item_title">Маникюр и педикюр
+                      </h2>
+                      <p class="services_item_descr">Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
+                      </p><span class="button secondary clear icon" href="#">Подробнее
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                          <use fill="#55b0bf" xlink:href="#arr"></use>
+                        </svg></span></span></a></div>
+                <div class="column small-12 large-4"><a class="services_item" href="#"><span class="services_item_img"><img src="./img/services/2@2x.jpg" alt="Косметические услуги"></span><span class="services_item_content">
+                      <h2 class="services_item_title">Косметические услуги
+                      </h2>
+                      <p class="services_item_descr">Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
+                      </p><span class="button secondary clear icon" href="#">Подробнее
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                          <use fill="#55b0bf" xlink:href="#arr"></use>
+                        </svg></span></span></a></div>
+                <div class="column small-12 large-4"><a class="services_item" href="#"><span class="services_item_img"><img src="./img/services/3@2x.jpg" alt="Массаж"></span><span class="services_item_content">
+                      <h2 class="services_item_title">Массаж
+                      </h2>
+                      <p class="services_item_descr">Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
+                      </p><span class="button secondary clear icon" href="#">Подробнее
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                          <use fill="#55b0bf" xlink:href="#arr"></use>
+                        </svg></span></span></a></div>
         </div><a class="button primary-lighter hollow" href="./services.html">Смотреть все услуги</a>
+      </section>
+      <section class="brands">
+        <div class="row align-middle align-justify brands_inner">
+          <div class="column shrink brands_item"><img src="./img/brands/reviderm.jpg" alt="Reviderm"></div>
+          <div class="column shrink brands_item"><img src="./img/brands/beauty_hills.jpg" alt="Beauty Hills"></div>
+          <div class="column shrink brands_item"><img src="./img/brands/shellac.jpg" alt="Shellac"></div>
+          <div class="column shrink brands_item"><img src="./img/brands/calgel.jpg" alt="Calgel"></div>
+        </div>
       </section>
       <section class="row column contact">
         <div class="contact_card">
@@ -203,18 +221,18 @@
       </section>
       <footer class="footer">
         <div class="row footer_top">
-          <div class="column footer_menu">
+          <div class="column shrink footer_menu">
             <ul class="menu">
               <li> <a href="./about.html">О нас</a></li>
               <li><a href="./services.html">Услуги</a></li>
               <li> <a href="./contacts.html">Контакты</a></li>
             </ul>
           </div>
-          <div class="column footer_phone"><a href="tel:01767 078-14-52">
+          <div class="column shrink footer_phone"><a href="tel:017670781452">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                 <use fill="#868e96" xlink:href="#tel"></use>
-              </svg>017670781452</a></div>
-          <div class="column footer_social">
+              </svg>01767 078-14-52</a></div>
+          <div class="column shrink footer_social">
             <ul class="social social--footer">
               <li><a target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="9" height="20">
@@ -230,10 +248,10 @@
                   </svg></a></li>
             </ul>
           </div>
-          <div class="column footer_logo"><img src="./img/logo_footer.svg" alt="Tonik's"></div>
+          <div class="column shrink footer_logo"><img src="./img/logo_small.svg" alt="Tonik's"></div>
         </div>
         <div class="footer_bottom">
-          <div class="row align-middle align-justify">
+          <div class="row align-middle align-justify footer_bottom_inner">
             <div class="column shrink">© 2018, Tonik's Beauty</div>
             <div class="column shrink">Design by Zbrutskii</div>
           </div>
@@ -246,12 +264,14 @@
         <li> <a href="./about.html">О нас</a></li>
         <li><a href="./services.html">Услуги</a></li>
         <li> <a href="./contacts.html">Контакты</a></li>
-      </ul><a class="button primary icon" href="#contact" data-smooth-scroll data-close>Записаться
+      </ul>
+      <button class="button primary icon" data-open="appointment">Записаться
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
-          <use fill="#fff" xlink:href="#arr"></use>
-        </svg></a>
+          <use xlink:href="#arr"></use>
+        </svg>
+      </button>
       <button class="close-button small" aria-label="Закрыть" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <script src="./js/app.min.js?ckcachebust=551de871703a14c37ff1ccc6628bb3f0"></script>
+    <script src="./js/app.min.js?ckcachebust=7f68f12fd04bf8638c8ce34d01aaa393"></script>
   </body>
 </html>

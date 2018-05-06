@@ -2,21 +2,63 @@
     margin-top: -100px;
     background-color: #f8f9fa;
     border-top: 1px solid #e9ecef;
+    @include breakpoint(large) {
+        background: none;
+    }
     &_top{
         flex-direction: column-reverse;
         align-items: center;
         padding: 170px 0 70px;
+        @include breakpoint(medium) {
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            padding-top: 200px;
+            max-width: 640px;
+            justify-content: space-between;
+        }
+        @include breakpoint(large) {
+            max-width: 71.25rem;
+            flex-direction: row;
+        }
     }
     &_menu{
         display: none;
+        order: 1;
+        @include breakpoint(medium) {
+            display: block;
+            li:first-child a{
+                padding-left: 0;
+            }
+        }
+        @include breakpoint(large) {
+            order: 0;
+        }
     }
     &_phone{
         display: none;
+        font-family: $header-font-family;
+        @include breakpoint(large) {
+            display: block;
+        }
+        svg{
+            vertical-align: middle;
+            margin-right: 12px;
+        }
     }
-    &_logo{
-        margin-bottom: 70px;
+    &_social{
+        margin-top: 70px;
+        @include breakpoint(medium) {
+            flex: 0 0 100%;
+            order: 3;
+        }
+        @include breakpoint(large) {
+            order: 0;
+            flex: 0 0 auto;
+            margin: 0;
+        }
     }
     &_bottom{
+        background-color: #f8f9fa;
         border-top: 1px solid #dee2e6;
         font-size: 14px;
         letter-spacing: 0.28px;

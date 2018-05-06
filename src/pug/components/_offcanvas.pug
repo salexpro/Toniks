@@ -2,8 +2,8 @@
     .off-canvas_logo
         img(src="./img/logo.svg", alt="Tonik's")
     +menu('vertical')
-    a.button.primary.icon(href="#contact" data-smooth-scroll data-close)
+    button.button.primary.icon(data-open="appointment")
         | Записаться
-        +icon('arr', 24, 16, 'fff')
+        +icon('arr', 24, 16)
     button.close-button.small(aria-label='Закрыть', type='button', data-close)
         span(aria-hidden='true') ×

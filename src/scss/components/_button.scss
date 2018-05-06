@@ -16,8 +16,20 @@
     }
     &.hollow.hollow{
         color: $black;
+        min-width: 200px;
         &:hover, &:focus{
             color: $black;
         }
+    }
+    &.hollow, &.clear{
+        box-shadow: none;
+        &.primary{
+            svg{
+                fill: $primary-color;
+            }
+        }
+    }
+    svg{
+        fill: $white;
     }
 }

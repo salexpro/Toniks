@@ -1,10 +1,32 @@
 .first{
     margin-bottom: 70px;
+    @include breakpoint(medium) {
+        margin-bottom: 100px;
+    }
+    @include breakpoint(large) {
+        margin-bottom: 130px;
+    }
     &_img{
         position: relative;
         width: calc(100% - 20px);
-        box-shadow: 10px 10px 20px rgba(153, 153, 153, 0.4);
         margin-bottom: 60px;
+        max-width: 550px;
+        @include breakpoint(medium) {
+            margin: 0 auto 80px;
+        }
+        @include breakpoint(large) {
+            width: 100%;
+            margin: 0;
+        }
+        img{
+            box-shadow: 10px 10px 20px rgba(153, 153, 153, 0.4);
+            @include breakpoint(medium) {
+                transform: translate(-15px, -15px);
+            }
+            @include breakpoint(large) {
+                transform: translate(0, 0);
+            }
+        }
         &::after{
             content: '';
             position: absolute;
@@ -14,12 +36,31 @@
             height: 100%;
             border: 6px solid $secondary-light;
             z-index: -1;
+            @include breakpoint(medium) {
+                top: 15px;
+                left: 15px;
+            }
+            @include breakpoint(large) {
+                top: 30px;
+                left: 30px;
+            }
         }
     }
     &_content{
         text-align: center;
+        max-width: 500px;
+        margin: auto;
+        @include breakpoint(large) {
+            text-align: left;
+            margin: 0;
+        }
     }
     &_descr{
         font-size: 15px;
+        letter-spacing: 0.32px;
+        @include breakpoint(medium) {
+            font-size: 16px;
+            margin: 30px 10px 40px;
+        }
     }
 }

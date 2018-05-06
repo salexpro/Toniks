@@ -1,26 +1,105 @@
 .head{
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @include breakpoint(large) {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+    &--top{
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @include breakpoint(medium) {
+            align-items: center;
+            padding-bottom: 0;
+            margin-bottom: 102px;
+        }
+        .head{
+            &_logo {
+                margin-top: -5px;
+                @include breakpoint(medium) {
+                    margin: 0 auto -36px 38px;
+                }
+                @include breakpoint(large) {
+                    margin: 0 0 -36px 0;
+                }
+            }
+        }
+    }
+    &--fixed{
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 56px;
+        z-index: 3;
+        background-color: $white;
+        box-shadow: 0 3px 8px rgba(206, 212, 218, 0.3);
+        transition: 300ms;
+        transform: translateY(-100%);
+        opacity: 0;
+        @include breakpoint(medium) {
+            height: 64px;
+        }
+        &.is_visible{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .head{
+            &_logo{
+                @include breakpoint(medium) {
+                    margin: 0 auto 0 40px;
+                }
+                @include breakpoint(large) {
+                    margin: 0;
+                }
+            }
+        }
+        .button.button{
+            @include breakpoint(medium) {
+                padding-right: 2px;
+            }
+            @include breakpoint(large) {
+                border-right: 0;
+                padding-right: 0;
+            }
+        }
+    }
     &_hamb{
         @include hamburger($black, $dark-gray, 20px, 14px, 2px, 3);
+        @include breakpoint(medium) {
+            margin-left: 8px;
+        }
+        @include breakpoint(large){
+            display: none;
+        }
         &::after{
             transition: 300ms;
         }
     }
-    &_logo{
+    &_logo {
         width: 130px;
-        margin-top: -5px;
+        @include breakpoint(medium) {
+            width: 165px;
+        }
     }
     &_nav{
         display: none;
+        @include breakpoint(large) {
+            display: block;
+        }
     }
     .button{
         display: none;
+        @include breakpoint(medium) {
+            display: block;
+        }
     }
     &_chat{
+        @include breakpoint(medium) {
+            display: none;
+        }
         svg {
             transition: 300ms
         }

@@ -1,0 +1,19 @@
+.brands{
+    display: none;
+    border-top: 1px solid #e9ecef;
+    @include breakpoint(medium) {
+        display: block;
+    }
+    &_inner{
+        height: 195px;
+        overflow: hidden;
+        max-width: 640px;
+        @include breakpoint(large) {
+            max-width: 71.25rem;
+        }
+    }
+    &_item{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

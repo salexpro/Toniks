@@ -57,3 +57,7 @@ select{
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI4IiB2aWV3Ym94PSIwIDAgMTIgOCI+PGcgb3BhY2l0eT0iLjY1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjkxIC0zNjgwKSI+PHBhdGggZmlsbD0iIzIxMjUyOSIgZD0iTTI5NyAzNjg3LjQxbC01LjY2LTUuNjUgMS40Mi0xLjQyIDQuMjQgNC4yNSA0LjI0LTQuMjUgMS40MiAxLjQyLTUuNjYgNS42NXoiPjwvcGF0aD48L2c+PC9zdmc+);
     background-size: 12px;
 }
+
+.menu{
+    font-family: $header-font-family;
+}
