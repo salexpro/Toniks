@@ -749,6 +749,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/src\/pug\/pages\/contacts.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/contacts.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/pages\/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1075,7 +1084,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 547347031
+	"lastBuiltDate": 547347281
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
