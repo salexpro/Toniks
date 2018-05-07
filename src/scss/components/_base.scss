@@ -60,4 +60,19 @@ select{
 
 .menu{
     font-family: $header-font-family;
+    .is_active{
+        a{
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 24px;
+                height: 3px;
+                background-color: $primary-color;
+                transform: translateX(-50%);
+            }
+        }
+    }
 }

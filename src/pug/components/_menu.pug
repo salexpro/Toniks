@@ -1,6 +1,6 @@
 mixin menu(mod)
     ul.menu(class=mod)
-        li 
+        li(class=page==='about'? "is_active" : "")
             a(href="./about.html") О нас
         li
             a(href="./services.html") Услуги

@@ -393,6 +393,116 @@
 		"oAP": "\/build\/fonts\/SegoeUI\/SegoeUI.woff2",
 		"oF": 0
 		},
+	"\/src\/img\/about\/1.jpg": {
+		"ft": 16384,
+		"iS": 61332,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/1@2x.jpg": {
+		"ft": 16384,
+		"iS": 186322,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/1@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/2.jpg": {
+		"ft": 16384,
+		"iS": 58423,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/2@2x.jpg": {
+		"ft": 16384,
+		"iS": 175812,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/3.jpg": {
+		"ft": 16384,
+		"iS": 35854,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/3@2x.jpg": {
+		"ft": 16384,
+		"iS": 99446,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/3@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/4.jpg": {
+		"ft": 16384,
+		"iS": 27290,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/4@2x.jpg": {
+		"ft": 16384,
+		"iS": 81353,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/4@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/5.jpg": {
+		"ft": 16384,
+		"iS": 30480,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/about\/5@2x.jpg": {
+		"ft": 16384,
+		"iS": 92842,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/about\/5@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/src\/img\/brands\/beauty_hills.jpg": {
 		"ft": 16384,
 		"iS": 6046,
@@ -630,6 +740,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/src\/pug\/pages\/about.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/about.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/pages\/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -638,6 +757,15 @@
 		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/src\/pug\/sections\/_about.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_about.html",
+		"oF": 0,
+		"oS": 1
 		},
 	"\/src\/pug\/sections\/_brands.pug": {
 		"cB": 1,
@@ -744,6 +872,19 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/app.css",
 		"oF": 1,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_about.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_about.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -934,7 +1075,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 547340159
+	"lastBuiltDate": 547347031
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

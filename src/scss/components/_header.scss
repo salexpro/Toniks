@@ -101,6 +101,7 @@
             display: none;
         }
         svg {
+            display: block;
             transition: 300ms
         }
         &:hover, &:focus{
