@@ -1,0 +1,28 @@
+mixin block(color, direction, img, header, descr, button)
+    .row.align-middle.align-justify.block(class=color=='pink' ? "block--small" : "")
+        .column.small-12.large-6(class="block_img--" + direction)
+            .block_img(class="block_img--" + color)
+                img(src="./img/" + img + "@2x.jpg", alt="")
+        .column.small-12.large-5.block_content(class=color=='pink' ? "block_content--small" : "")
+            if color !== 'pink'
+                h1.block_header
+                    !=header
+            else
+                h2.block_header.block_header--small
+                    !=header
+            if typeof descr === 'object'
+                each val in descr
+                    p.block_descr(class=color=='pink' ? "block_descr--small" : "")
+                        =val
+            else
+                p.block_descr
+                    =descr
+            if button
+                if button[0]
+                    a.button.secondary-lighter.icon(href="./" + button[1] + ".html")
+                        =button[2]
+                        +icon('arr', 24, 16, 'fff')
+                else
+                    button.button.secondary-lighter.icon(data-open=button[1])
+                        =button[2]
+                        +icon('arr', 24, 16, 'fff')

@@ -39,7 +39,7 @@ $contrast-warnings: false;
 // @include foundation-sticky;
 @include foundation-reveal;
 // @include foundation-switch;
-// @include foundation-table;
+@include foundation-table;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
@@ -58,6 +58,7 @@ $contrast-warnings: false;
 @import 'components/_fonts';
 @import 'components/_base';
 @import 'components/_button';
+@import 'components/_block';
 @import 'components/_offcanvas';
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel';
 @import 'components/_social';
@@ -65,10 +66,10 @@ $contrast-warnings: false;
 
 // Sections
 @import 'components/_header';
-@import 'components/_first';
 @import 'components/_offers';
 @import 'components/_services';
 @import 'components/_brands';
 @import 'components/_contact';
 @import 'components/_footer';
 @import 'components/_about';
+@import 'components/_product';

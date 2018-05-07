@@ -1,0 +1,54 @@
+section.product
+    +block('blue', 'left', 'product', 'Manikü<br>und Pediküre', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer elit.', [0, 'appointment', 'Записаться'])
+
+    .row.product_content
+        .column.small-12.large-6.product_prices
+            h2.product_content_header Manikü
+            table
+                tr 
+                    td Ohne Farblack
+                    td 70 €
+                tr
+                    td Maniküre mit Calgel Design
+                    td 60 €
+                tr
+                    td Mit Calgel / Japanisches Bio-Gel
+                    td 30 €
+                tr
+                    td Mit Farblack
+                    td 45 €
+                tr
+                    td Mit Shellac
+                    td 25 €
+            
+            h2.product_content_header Pediküre
+            table
+                tr
+                    td Mit Farblack
+                    td 45 €
+                tr
+                    td Mit Shellac
+                    td 50 €
+                tr
+                    td Ohne Farblack
+                    td 40 €
+        .column.small-12.large-6.product_info
+            h2.product_content_header Warum Calgel?
+            p
+                | Calgel ist ein innovatives, schonendes Verfahren, welches bisher bereits Erfolge weltweit verzeichnet und nun auch in Deutschland angewandt wird. Worin liegen die Vorteile von Calgel gegenüber bisher im Markt befindlichen Produkten?
+            ul
+                li Durch seine besondere Eigenschaft stärkt Calgel auf natürliche Weise den Nagel
+                li Die Konsistenz von Calgel lässt den Nagel dünn und natürlich aussehen
+                li Ein mögliches Buffern vor dem Auftragen wird durch Calgel minimiert
+                li Der Naturnagel wird nicht beschädigt und Nagelpilzbildung nicht begünstigt
+                li Verzicht auf Verwendung von Primern
+                li Kein luftdichter Abschluss
+                li Keine Beein ussung der metabolischen Tätigkeit
+                li Calgel kann leicht und einfach wieder entfernt werden - soak off Gel
+        
+    h2.product_header
+        | Другие услуги
+    .row.services_inner
+        +service('services/1', 'Маникюр и педикюр', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+        +service('services/2', 'Косметические услуги', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+        +service('services/3', 'Массаж', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')

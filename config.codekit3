@@ -589,6 +589,28 @@
 		"plM": 1103269715935,
 		"prP": 0
 		},
+	"\/src\/img\/product.jpg": {
+		"ft": 16384,
+		"iS": 29889,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/product.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/product@2x.jpg": {
+		"ft": 16384,
+		"iS": 102183,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/product@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/src\/img\/services\/1.jpg": {
 		"ft": 16384,
 		"iS": 13725,
@@ -686,6 +708,15 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/src\/pug\/components\/_block.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_block.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/components\/_icons.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -719,6 +750,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_popup.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/components\/_service.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_service.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -766,6 +806,15 @@
 		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/src\/pug\/pages\/product.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/product.html",
+		"oF": 0,
+		"oS": 1
 		},
 	"\/src\/pug\/sections\/_about.pug": {
 		"cB": 1,
@@ -836,6 +885,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_offers.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/src\/pug\/sections\/_product.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_product.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -910,6 +968,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/src\/scss\/components\/_block.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_block.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/src\/scss\/components\/_brands.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -945,19 +1016,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_contact.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/src\/scss\/components\/_first.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_first.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1040,6 +1098,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/src\/scss\/components\/_product.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_product.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/src\/scss\/components\/_services.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1084,7 +1155,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 547347281
+	"lastBuiltDate": 547421780
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

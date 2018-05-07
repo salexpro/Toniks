@@ -1,0 +1,149 @@
+.block{
+    margin-bottom: 70px;
+    @include breakpoint(medium) {
+        margin-bottom: 100px;
+    }
+    @include breakpoint(large) {
+        margin-bottom: 130px;
+    }
+    &--small{
+        margin-bottom: 45px;
+        @include breakpoint(medium) {
+            max-width: 640px;
+            margin: 0 auto 80px;
+        }
+        @include breakpoint(large) {
+            max-width: 71.25rem;
+            margin-bottom: 100px;
+            p:last-child {
+                margin: 0;
+            }
+        }
+    }
+    &_img{
+        position: relative;
+        width: calc(100% - 20px);
+        margin-bottom: 60px;
+        max-width: 550px;
+        @include breakpoint(medium) {
+            margin: 0 auto 80px;
+        }
+        @include breakpoint(large) {
+            width: 100%;
+            margin: 0;
+        }
+        &--left .block_img{
+            img {
+                box-shadow: 10px 10px 20px rgba(153, 153, 153, 0.4);
+                @include breakpoint(medium) {
+                    transform: translate(-15px, -15px);
+                }
+                @include breakpoint(large) {
+                    transform: translate(0, 0);
+                }
+            }
+            &::after {
+                top: 20px;
+                left: 20px;
+                @include breakpoint(medium) {
+                    top: 15px;
+                    left: 15px;
+                }
+                @include breakpoint(large) {
+                    top: 30px;
+                    left: 30px;
+                }
+            }
+        }
+        &--right{
+            @include breakpoint(large) {
+                order: 1;
+            }
+            .block_img {
+                margin-left: 20px;
+                @include breakpoint(medium) {
+                    margin-left: auto;
+                }
+                img {
+                    box-shadow: -10px 10px 20px rgba(153, 153, 153, 0.4);
+                    @include breakpoint(medium) {
+                        transform: translate(15px, -15px);
+                    }
+                    @include breakpoint(large) {
+                        transform: translate(0, 0);
+                    }
+                }
+                &::after {
+                    top: 20px;
+                    left: -20px;
+                    @include breakpoint(medium) {
+                        top: 15px;
+                        left: -15px;
+                    }
+                    @include breakpoint(large) {
+                        top: 30px;
+                        left: -30px;
+                    }
+                }
+            }
+        }
+        &--blue{
+            &::after{
+                border-color: $secondary-light;
+            }
+        }
+        &--pink{
+            &::after {
+                border-color: $primary-light;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-width: 6px;
+            border-style: solid;
+            z-index: -1;
+        }
+    }
+    &_content{
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+        @include breakpoint(large) {
+            text-align: left;
+            margin: 0;
+        }
+        &--small{
+            max-width: none;
+        }
+    }
+    &_header{
+        &--small{
+            margin-bottom: 1.5em;
+            @include breakpoint(large) {
+                margin-bottom: 1em;
+            }
+        }
+    }
+    &_descr{
+        font-size: 15px;
+        letter-spacing: 0.32px;
+        @include breakpoint(medium) {
+            font-size: 16px;
+            margin: 30px 10px 40px;
+        }
+        @include breakpoint(large) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &--small{
+            margin: 0 0 1rem;
+            text-align: left;
+        }
+    }
+    .button{
+        min-width: 250px;
+    }
+}

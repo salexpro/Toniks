@@ -1,0 +1,96 @@
+.product{
+    &_content{
+        font-size: 15px;
+        margin-bottom: 40px;
+        @include breakpoint(medium) {
+            max-width: 640px;
+            font-size: 16px;
+            margin-bottom: 60px;
+        }
+        @include breakpoint(large) {
+            max-width: 71.25rem;
+        }
+        &_header{
+            text-align: center;
+            margin-bottom: 34px;
+            @include breakpoint(medium) {
+                text-align: left;
+            }
+        }
+    }
+    &_prices{
+        @include breakpoint(large) {
+            padding-left: 40px;
+            padding-right: 25px;
+        }
+        table{
+            letter-spacing: 0.3px;
+            margin-bottom: 44px;
+            tr{
+                &:first-child{
+                    td{
+                        padding-top: 5px;
+                    }
+                }
+                +tr {
+                    td {
+                        border-top: 1px solid #e9ecef;
+                    }
+                }
+            }
+            td{
+                &:last-child{
+                    font-weight: 700;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    &_info{
+        @include breakpoint(large) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        ul{
+            list-style: none;
+            @include breakpoint(medium) {
+                margin-left: 35px;
+            }
+        }
+        li{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 9px;
+                left: -20px;
+                width: 8px;
+                height: 8px;
+                box-shadow: 0 2px 6px rgba(246, 140, 178, 0.6);
+                background-color: $primary-color;
+            }
+            +li {
+                margin-top: 10px;
+            }
+        }
+    }
+    &_header{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        margin-bottom: 40px;
+        @include breakpoint(medium) {
+            margin-bottom: 60px;
+        }
+        &::before{
+            content: '';
+            flex: 1 1 100%;
+            border-bottom: 1px solid #e9ecef;
+            margin: 0 20px 0 0;
+        }
+        &::after{
+            @extend .product_header::before;
+            margin: 0 0 0 20px;
+        }
+    }
+}
