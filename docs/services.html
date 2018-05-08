@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Tonik's Beauty</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=0b6acc7bad680a0c24ec658d75179187">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=9b4cc07d571401d363819e0b998ddfdf">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=986e28d49a39a6bda102d421af61a369">
-    <link rel="manifest" href="/site.webmanifest?ckcachebust=a5ba2074a62ee436ab01e03eff35b3b8">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=50e79f7291c5ee38aed6f5137653d20d" color="#f68cb2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=64865dd6fb33baca22408d34f2b502aa">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?ckcachebust=db4236e1e12e2450d395e4afe3554566">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?ckcachebust=b1e41dfae47127c7e01134eeae9ff65b">
+    <link rel="manifest" href="/site.webmanifest?ckcachebust=301f7830bcbbde648dafc10862f76805">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?ckcachebust=20f2f3963d3f9918d0cddaf4c3754433" color="#f68cb2">
     <meta name="msapplication-TileColor" content="#f68cb2">
     <meta name="theme-color" content="#f68cb2">
-    <link rel="stylesheet" href="./css/app.css?ckcachebust=d542481f9863028576b2617503c0109c">
+    <link rel="stylesheet" href="./css/app.css?ckcachebust=22a30ed35abab106d22e98283c4f62a2">
   </head>
   <body>
     <svg style="display:none">
@@ -43,7 +43,7 @@
         <nav class="head_nav">
           <ul class="menu">
             <li><a href="./about.html">О нас</a></li>
-            <li><a href="./services.html">Услуги</a></li>
+            <li class="is_active"><a href="./services.html">Услуги</a></li>
             <li><a href="./contacts.html">Контакты</a></li>
           </ul>
         </nav>
@@ -59,7 +59,7 @@
         <nav class="head_nav">
           <ul class="menu">
             <li><a href="./about.html">О нас</a></li>
-            <li><a href="./services.html">Услуги</a></li>
+            <li class="is_active"><a href="./services.html">Услуги</a></li>
             <li><a href="./contacts.html">Контакты</a></li>
           </ul>
         </nav>
@@ -74,65 +74,86 @@
               </svg>
         </button>
       </header>
-      <section class="first">
+      <h1 class="about_header">Услуги и процедуры</h1>
+      <div class="row align-middle align-justify block">
+        <div class="column small-12 large-6 block_img--left">
+          <div class="block_img block_img--blue"><img src="./img/service@2x.jpg" alt=""/></div>
+        </div>
+        <div class="column small-12 large-5 block_content">
+          <h2 class="block_header">Fraktional<br>Mesotherapie
+          </h2>
+          <p class="block_descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer elit.
+          </p><a class="button secondary-lighter icon" href="./product.html">Подробнее об услуге
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                  <use fill="#fff" xlink:href="#arr"></use>
+                </svg></a>
+        </div>
+      </div>
+      <section class="service">
         <div class="row align-middle align-justify block">
+          <div class="column small-12 large-6 block_img--right">
+            <div class="block_img block_img--blue service_img"><img src="./img/product@2x.jpg" alt=""></div>
+          </div>
+          <div class="column small-12 large-6 product_prices service_content">
+            <h2 class="block_header">Manikü und Pediküre</h2>
+            <table>
+              <tr> 
+                <td>Ohne Farblack</td>
+                <td>25 €</td>
+              </tr>
+              <tr>
+                <td>Mit Shellac</td>
+                <td>45 €</td>
+              </tr>
+              <tr>
+                <td>Mit Calgel / Japanisches Bio-Gel /</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <td>Maniküre mit Calgel Design</td>
+                <td>70 €</td>
+              </tr>
+            </table>
+            <div class="service_content_bottom">
+              <button class="button primary" data-open="appointment">Записаться</button><a class="button secondary clear icon" href="./product.html">Все процедуры и цены
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                      <use fill="#55b0bf" xlink:href="#arr"></use>
+                    </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-middle align-justify block medium-order-1">
           <div class="column small-12 large-6 block_img--left">
-            <div class="block_img block_img--blue"><img src="./img/home@2x.jpg" alt=""/></div>
+            <div class="block_img block_img--blue service_img"><img src="./img/product2@2x.jpg" alt=""></div>
           </div>
-          <div class="column small-12 large-5 block_content">
-            <h1 class="block_header">Lorem ipsum dolor, consectetuer adipis aenean massa
-            </h1>
-            <p class="block_descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer elit.
-            </p><a class="button secondary-lighter icon" href="./services.html">Cмотреть услуги
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
-                    <use fill="#fff" xlink:href="#arr"></use>
-                  </svg></a>
-          </div>
-        </div>
-      </section>
-      <section class="offers">
-        <div class="row column">
-          <div class="owl-carousel offers_carousel">
-                  <div class="offers_item">
-                    <h2 class="offers_item_header">Только лучшее
-                    </h2>
-                    <div class="offers_item_descr"><b>Reviderm, Beauty Hills, Schellac</b>и другие проверенные бренды
-                    </div>
-                  </div>
-                  <div class="offers_item">
-                    <h2 class="offers_item_header">6 дней в неделю
-                    </h2>
-                    <div class="offers_item_descr"><b>Leopoldstr. 50, München</b>Работаем с 9:00 до 20:00
-                    </div>
-                  </div>
-                  <div class="offers_item">
-                    <h2 class="offers_item_header">Всегда на связи
-                    </h2>
-                    <div class="offers_item_descr"><b>01767 078-14-52</b>
-                      <ul class="social social--offers">
-                        <li><a target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                                  <use xlink:href="#facebook_messenger"></use>
-                                </svg></a></li>
-                        <li><a target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                                  <use xlink:href="#viber"></use>
-                                </svg></a></li>
-                        <li><a target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                                  <use xlink:href="#whatsapp"></use>
-                                </svg></a></li>
-                        <li><a target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17">
-                                  <use xlink:href="#telegram"></use>
-                                </svg></a></li>
-                      </ul>
-                    </div>
-                  </div>
+          <div class="column small-12 large-6 product_prices service_content">
+            <h2 class="block_header">Zuckerpaste - Halawa</h2>
+            <table>
+              <tr> 
+                <td>Achseln</td>
+                <td>15 €</td>
+              </tr>
+              <tr>
+                <td>Arme Komplett</td>
+                <td>ab 35 €</td>
+              </tr>
+              <tr>
+                <td>Bikini</td>
+                <td>20 €</td>
+              </tr>
+              <tr>
+                <td>Beine Komplett</td>
+                <td>ab 45 €</td>
+              </tr>
+            </table>
+            <div class="service_content_bottom">
+              <button class="button primary" data-open="appointment">Записаться</button><a class="button secondary clear icon" href="./product.html">Все процедуры и цены
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                      <use fill="#55b0bf" xlink:href="#arr"></use>
+                    </svg></a>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="services">
         <div class="row services_inner">
           <div class="column small-12 large-4"><a class="services_item" href="./product.html"><span class="services_item_img"><img src="./img/services/1@2x.jpg" alt="Маникюр и педикюр"/></span><span class="services_item_content">
                 <h2 class="services_item_title">Маникюр и педикюр
@@ -158,7 +179,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
                         <use fill="#55b0bf" xlink:href="#arr"></use>
                       </svg></span></span></a></div>
-        </div><a class="button primary-lighter hollow" href="./services.html">Смотреть все услуги</a>
+        </div>
       </section>
       <section class="brands">
         <div class="row align-middle align-justify brands_inner">
@@ -226,7 +247,7 @@
           <div class="column shrink footer_menu">
             <ul class="menu">
               <li><a href="./about.html">О нас</a></li>
-              <li><a href="./services.html">Услуги</a></li>
+              <li class="is_active"><a href="./services.html">Услуги</a></li>
               <li><a href="./contacts.html">Контакты</a></li>
             </ul>
           </div>
@@ -286,7 +307,7 @@
       <div class="off-canvas_logo"><img src="./img/logo.svg" alt="Tonik's"></div>
       <ul class="menu vertical">
         <li><a href="./about.html">О нас</a></li>
-        <li><a href="./services.html">Услуги</a></li>
+        <li class="is_active"><a href="./services.html">Услуги</a></li>
         <li><a href="./contacts.html">Контакты</a></li>
       </ul>
       <button class="button primary icon" data-open="appointment">Записаться
@@ -296,7 +317,7 @@
       </button>
       <button class="close-button small" aria-label="Закрыть" type="button" data-close><span aria-hidden="true">×</span></button>
     </div>
-    <script src="./js/app.min.js?ckcachebust=b3c742dce46d229ac8c0d721a3a3ca33"></script>
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk83O-v-B00q1vWPdkBC4orJUXqxqGKtI&amp;callback=initMap&ckcachebust=547442696"></script>
+    <script src="./js/app.min.js?ckcachebust=774ddb8a6f942e2da9e558cc724acb29"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk83O-v-B00q1vWPdkBC4orJUXqxqGKtI&amp;callback=initMap&ckcachebust=547442697"></script>
   </body>
 </html>

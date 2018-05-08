@@ -120,6 +120,7 @@
         }
     }
     &_header{
+        @extend h1;
         &--small{
             margin-bottom: 1.5em;
             @include breakpoint(large) {

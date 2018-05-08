@@ -1,0 +1,64 @@
+h1.about_header
+    | Услуги и процедуры
++block('blue', 'left', 'service', 'Fraktional<br>Mesotherapie', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer elit.', [1, 'product', 'Подробнее об услуге'])
+
+section.service
+    .row.align-middle.align-justify.block
+        .column.small-12.large-6.block_img--right
+            .block_img.block_img--blue.service_img
+                img(src="./img/product@2x.jpg", alt="")
+        .column.small-12.large-6.product_prices.service_content
+            h2.block_header
+                | Manikü und Pediküre
+            table
+                tr 
+                    td Ohne Farblack
+                    td 25 €
+                tr
+                    td Mit Shellac
+                    td 45 €
+                tr
+                    td Mit Calgel / Japanisches Bio-Gel /
+                    td 60 €
+                tr
+                    td Maniküre mit Calgel Design
+                    td 70 €
+            .service_content_bottom
+                button.button.primary(data-open="appointment")
+                    | Записаться
+                a.button.secondary.clear.icon(href="./product.html")
+                    | Все процедуры и цены
+                    +icon('arr', 24, 16, '55b0bf')
+
+    .row.align-middle.align-justify.block.medium-order-1
+        .column.small-12.large-6.block_img--left
+            .block_img.block_img--blue.service_img
+                img(src="./img/product2@2x.jpg", alt="")
+        .column.small-12.large-6.product_prices.service_content
+            h2.block_header
+                | Zuckerpaste - Halawa
+            table
+                tr 
+                    td Achseln
+                    td 15 €
+                tr
+                    td Arme Komplett
+                    td ab 35 €
+                tr
+                    td Bikini
+                    td 20 €
+                tr
+                    td Beine Komplett
+                    td ab 45 €
+            .service_content_bottom
+                button.button.primary(data-open="appointment")
+                    | Записаться
+                a.button.secondary.clear.icon(href="./product.html")
+                    | Все процедуры и цены
+                    +icon('arr', 24, 16, '55b0bf')
+
+
+    .row.services_inner
+        +service('services/1', 'Маникюр и педикюр', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+        +service('services/2', 'Косметические услуги', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')
+        +service('services/3', 'Массаж', 'Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.')

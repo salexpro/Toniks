@@ -11,4 +11,4 @@ const pageWidget = pages => {
     });
 }
 
-pageWidget(['index', 'about', 'product', 'contacts']);
+pageWidget(['index',  'product', 'about', 'services', 'contacts']);

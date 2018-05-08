@@ -5,8 +5,12 @@ mixin block(color, direction, img, header, descr, button)
                 img(src="./img/" + img + "@2x.jpg", alt="")
         .column.small-12.large-5.block_content(class=color=='pink' ? "block_content--small" : "")
             if color !== 'pink'
-                h1.block_header
-                    !=header
+                if page !== 'services'
+                    h1.block_header
+                        !=header
+                else
+                    h2.block_header
+                        !=header
             else
                 h2.block_header.block_header--small
                     !=header

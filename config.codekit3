@@ -600,12 +600,56 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/src\/img\/product2.jpg": {
+		"ft": 16384,
+		"iS": 30988,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/product2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/product2@2x.jpg": {
+		"ft": 16384,
+		"iS": 125793,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/product2@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/src\/img\/product@2x.jpg": {
 		"ft": 16384,
 		"iS": 102183,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/product@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/service.jpg": {
+		"ft": 16384,
+		"iS": 36039,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/service.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/src\/img\/service@2x.jpg": {
+		"ft": 16384,
+		"iS": 114605,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/service@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -787,7 +831,7 @@
 		"oA": 0,
 		"oAP": "\/build\/about.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/pages\/contacts.pug": {
 		"cB": 1,
@@ -796,7 +840,7 @@
 		"oA": 0,
 		"oAP": "\/build\/contacts.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/pages\/index.pug": {
 		"cB": 1,
@@ -814,7 +858,16 @@
 		"oA": 0,
 		"oAP": "\/build\/product.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/services.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/services.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/src\/pug\/sections\/_about.pug": {
 		"cB": 1,
@@ -897,6 +950,15 @@
 		"oF": 0,
 		"oS": 1
 		},
+	"\/src\/pug\/sections\/_service.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_service.html",
+		"oF": 0,
+		"oS": 1
+		},
 	"\/src\/pug\/sections\/_services.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -939,7 +1001,7 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/app.css",
 		"oF": 1,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/src\/scss\/components\/_about.scss": {
@@ -1111,6 +1173,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/src\/scss\/components\/_service.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_service.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/src\/scss\/components\/_services.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1155,7 +1230,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 547421780
+	"lastBuiltDate": 547442697
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
