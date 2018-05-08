@@ -79,7 +79,7 @@
         }
         @include breakpoint(large) {
             max-width: 300px;
-            flex-direction: column;
+            display: block;
         }
         &:hover {
             img {
@@ -126,6 +126,9 @@
                     transform: translate(0, 0);
                 }
             }
+        }
+        &_content{
+            display: block;
         }
         &_title{
             @include breakpoint(large) {

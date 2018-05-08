@@ -26,9 +26,7 @@
         order: 1;
         @include breakpoint(medium) {
             display: block;
-            li:first-child a{
-                padding-left: 0;
-            }
+            margin-left: -16px;
         }
         @include breakpoint(large) {
             order: 0;
