@@ -831,7 +831,7 @@
 		"oA": 0,
 		"oAP": "\/build\/about.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/pages\/contacts.pug": {
 		"cB": 1,
@@ -840,7 +840,7 @@
 		"oA": 0,
 		"oAP": "\/build\/contacts.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/pages\/index.pug": {
 		"cB": 1,
@@ -849,7 +849,7 @@
 		"oA": 0,
 		"oAP": "\/build\/index.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/pages\/product.pug": {
 		"cB": 1,
@@ -858,7 +858,7 @@
 		"oA": 0,
 		"oAP": "\/build\/product.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/pages\/services.pug": {
 		"cB": 1,
@@ -867,7 +867,7 @@
 		"oA": 0,
 		"oAP": "\/build\/services.html",
 		"oF": 0,
-		"oS": 1
+		"oS": 0
 		},
 	"\/src\/pug\/sections\/_about.pug": {
 		"cB": 1,
@@ -1001,7 +1001,7 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/app.css",
 		"oF": 1,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/src\/scss\/components\/_about.scss": {
@@ -1230,7 +1230,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 547549993
+	"lastBuiltDate": 549884361
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
